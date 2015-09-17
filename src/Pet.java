@@ -1,4 +1,4 @@
-package java;
+
 
 public class Pet {
 	private String name;
@@ -12,7 +12,9 @@ public class Pet {
 	}
 	
 	public Pet(String initialName, int initialAge, double initialWeight) {
-		 // 구현하시오.
+		 name = initialName;
+		 age = initialAge;
+		 weight = initialWeight;
 	}
         // 오버로딩
 	public Pet(String initialName) {
@@ -36,30 +38,36 @@ public class Pet {
 		weight = 0;
 	}
 	public void set(String newName, int newAge, double newWeight) {
-		 // 구현 하시오.
+		 name = newName;
+		 age = newAge;
+		 weight = newWeight;
 	}
 	
 	public void setAge( int newAge) {
-               // 구현하시오.
+		this.age = newAge;
 	}
 	
 	public void setWeight( double newWeight) {
-	      // 구현하시오.
+	      this.weight = newWeight;
        }
 	
 	public String getName() {
-		return null;
+		return name;
 		// 구현하시오.
 	}
 	
 	public int getAge() {
-		return 0;
+		return age;
 		// 구현하시오.
 	}
 	
 	public double getWeight() {
-		return 0;
+		return weight;
 		// 구현하시오.
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 }
 
